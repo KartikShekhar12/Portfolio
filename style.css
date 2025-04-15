@@ -1,0 +1,174 @@
+.navbar{
+    position: fixed;
+    width: 50%;
+    top: 2px;
+    left: 25%;
+    background-color: #1d1c44;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 50px;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background-color: #070b0c;
+    border-radius: 50px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 6000px;
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.edugridcontainer{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(200px, 1fr)
+    );
+    gap: 50px;
+    padding: 10px;
+}
+
+.edugriditem{
+    text-align: center;
+    color: rgb(8, 5, 5);
+    background-color: rgba(253, 136, 26, 0.911);
+    padding: 12%;
+    border-radius: 20%;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.skillsgridcontainer{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(120px, 1fr)
+    );
+    margin: 0 auto;
+    gap: 80px;
+    padding: 10px;
+    justify-items: center;
+
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+}
+
+.skillsgriditem{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    background-color: rgba(30, 92, 28, 0.76);
+    padding: 12%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skillsgriditem:hover {
+    transform: scale(1.5);
+    background-color: rgba(80, 30, 120, 0.9);
+    padding: 0%;
+}
+
+.skillsgriditem .hover-text {
+    display: none;
+}
+
+.skillsgriditem:hover .default-text {
+    display: none;
+}
+
+.skillsgriditem:hover .hover-text {
+    display: inline;
+    font-size: 18px;
+}
+
+.buttonstyle{
+    background-color: rgb(120, 11, 124);
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.buttonstyle:hover{
+    background-color: darkred;
+    border-radius: 100px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color: #333;
+}
+
+
+form {
+    margin-left: 25% ;
+    background: #ec9f45;
+    padding: 20px;
+    border: 3px solid #f53f07;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px -10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e7e4e4;
+}
+
+p{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0.1%;
+    left: 2%;
+    right: 2%;
+    
+}
